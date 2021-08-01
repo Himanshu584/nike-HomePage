@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 :root{
     /* --main-color: rgb(255, 106, 156); */
     --main-color: #ff66cc;
+    --btn-hvr: #a73982;
 }
 
 body{
@@ -11,36 +15,37 @@ body{
         rgb(243, 241, 241) 50%, 
         rgb(243, 241, 241) 100%
       );
-    /* display: flex;
-    align-items: center;
-    flex-direction: column; */
     }
 
+
+/* Cart Start */
 .cart{
     background: #ffff;
     margin: 7em auto;
     width: 70vw;
     height: 70vh;
     border-radius: 20px;
-    padding: 17px;
+    padding: 20px;
 
     box-shadow: 8px 7px 13px -2px rgba(0,0,0,0.34);
     -webkit-box-shadow: 8px 7px 13px -2px rgba(0,0,0,0.34);
     -moz-box-shadow: 8px 7px 13px -2px rgba(0,0,0,0.34);
 }
+/* Cart End */
 
+/* ------------------------------------------------------------------------- */
+
+/* NavBar Start */
 .cart > nav{
     margin: 20px 27px;
-    /* align-items: center;
-    justify-content: center; */
-    
 }
 .cart > nav > img{
-    width: 80px;
-    height: 40px;
+    max-width:100px;
     margin-right: 25em;
 }
-
+a{
+    line-height: 3em;
+}
 .cart > nav > a{
     text-decoration: none;
     color: black;
@@ -51,9 +56,104 @@ body{
 }
 
 .cart > nav > a:hover{
-    font-size: 20px;
-    font-weight: bold;
-    padding: 9px;
     color: var(--main-color);
 }
 
+/* NavBar End */
+
+/* ------------------------------------------------------------------------- */
+
+/* Content Start*/
+
+.content{
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+    height: 75%;
+}
+
+.left-div{
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    margin-bottom: 0px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    font-weight: lighter;
+    margin-top: 0%;
+}
+
+.btn{
+    background: var(--main-color);
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 16px 24px;
+    border-radius: 0px;
+    border: none;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    background: var(--btn-hvr);
+    cursor: pointer;
+}
+
+
+.right-div > img{
+    max-width: 400px;
+}
+
+/* Content End */
+
+/* ------------------------------------------------------------------------- */
+
+
+/* icons Start */
+
+.icons{
+    margin-top: 4em;
+
+}
+
+.fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 4px;
+    border-radius: 20px;
+    border: 4px solid var(--main-color);
+  }
+
+.fa-instagram{
+    background: #ffff;
+    color: var(--main-color);
+}
+
+.fa-facebook{
+    background: #ffff;
+    color: var(--main-color);
+}
+
+.fa-twitter{
+    background: #ffff;
+    color: var(--main-color); 
+}
+
+.fa:hover{
+    color: var(--btn-hvr);
+    border-color: var(--btn-hvr);
+}
+
+/* icons End */
